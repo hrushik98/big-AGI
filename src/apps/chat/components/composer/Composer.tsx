@@ -1008,9 +1008,7 @@ export function Composer(props: {
 
                 {/* [mobile] bottom-corner secondary button */}
                 {isMobile && (showChatExtras
-                    ? (composerQuickButton === 'call'
-                      ? <ButtonCallMemo isMobile disabled={noConversation || noLLM} onClick={handleCallClicked} />
-                      : <ButtonBeamMemo isMobile disabled={noConversation /*|| noLLM*/} color={beamButtonColor} hasContent={!!composeText} onClick={handleSendTextBeamClicked} />)
+                    ? <ButtonBeamMemo isMobile disabled={noConversation /*|| noLLM*/} color={beamButtonColor} hasContent={!!composeText} onClick={handleSendTextBeamClicked} />
                     : isDraw
                       ? <ButtonOptionsDraw isMobile onClick={handleDrawOptionsClicked} sx={{ mr: { xs: 1, md: 2 } }} />
                       : <IconButton disabled sx={{ mr: { xs: 1, md: 2 } }} />

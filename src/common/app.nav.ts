@@ -93,17 +93,6 @@ export const navItems: {
       type: 'app',
       route: '/',
     },
-    {
-      name: 'Call',
-      barTitle: 'Voice Calls',
-      icon: CallOutlinedIcon,
-      iconActive: CallIcon,
-      type: 'app',
-      route: '/call',
-      hideDrawer: true,
-      panelAsMenu: true,
-      fullWidth: true,
-    },
     // {
     //   name: 'Draw',
     //   icon: FormatPaintOutlinedIcon,
@@ -247,12 +236,6 @@ export const navItems: {
     //   icon: TwitterIcon,
     //   href: 'https://twitter.com',
     // },
-    {
-      type: 'extLink',
-      name: 'Discord',
-      icon: DiscordIcon,
-      href: Brand.URIs.SupportInvite,
-    },
     {
       type: 'extLink',
       name: 'GitHub',
